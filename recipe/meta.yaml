@@ -10,7 +10,7 @@ source:
   sha256: d144a8a9164c45aaddcc1c4233d3603dd21bb4617716a5d02c4e6b06a75c1840
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: psiresp-base
@@ -25,7 +25,7 @@ outputs:
         - pip
       run:
         - python >=3.7
-        - qcelemental ==0.22.0
+        - qcelemental
         - numpy
         - scipy >=1.4
         - tqdm
