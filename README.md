@@ -5,7 +5,7 @@ Home: https://github.com/lilyminium/psiresp
 
 Package license: LGPL-3.0-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/psiresp-split-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/psiresp-split-feedstock/blob/main/LICENSE.txt)
 
 Summary: Calculate RESP charges with Psi4
 
@@ -25,8 +25,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15109&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/psiresp-split-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15109&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/psiresp-split-feedstock?branchName=main">
       </a>
     </td>
   </tr>
