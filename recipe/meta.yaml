@@ -1,5 +1,5 @@
 {% set name = "psiresp" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: psiresp-split
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d144a8a9164c45aaddcc1c4233d3603dd21bb4617716a5d02c4e6b06a75c1840
+  sha256: ed7504bf89aa6c76aedc35005382e461ef61809b9dd64e64cf6b55c61dc57321
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - name: psiresp-base
