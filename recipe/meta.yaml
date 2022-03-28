@@ -10,7 +10,7 @@ source:
   sha256: e2ad53c0981226680c09f234d7b28f9b69771764b9603f0ac16e71b9278431e3
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: psiresp-base
@@ -25,8 +25,9 @@ outputs:
         - pip
       run:
         - python >=3.7
-        - qcelemental
+        - qcelemental >=0.22.0
         - numpy
+        - pydantic >=1.0
         - scipy >=1.4
         - tqdm
     
@@ -50,7 +51,7 @@ outputs:
         - python >=3.7
         - geometric
         - rdkit
-        - qcfractal
+        - qcfractal >=0.15
         - requests
         - h5py <3.2
         - {{ pin_subpackage('psiresp-base', exact=True) }}
