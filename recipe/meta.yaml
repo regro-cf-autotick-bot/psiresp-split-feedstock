@@ -1,5 +1,5 @@
 {% set name = "psiresp" %}
-{% set version = "0.4.2" %}
+{% set version = "0.3.2" %}
 
 package:
   name: psiresp-split
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7fb069351824df32a5064bc4061877d35cf8907c7ef6aa6d83a4af0797b72ae4
+  sha256: e842cf5d662e788eb761cbde0c00ff35a732bb9ce7fd025a6063f90efdbe0563
 
 build:
   number: 0
@@ -27,7 +27,7 @@ outputs:
         - python >=3.7
         - qcelemental >=0.22.0
         - numpy
-        - pydantic >=1.0
+        - pydantic >=1.9
         - scipy >=1.4
         - tqdm
     
