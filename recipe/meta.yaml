@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: e842cf5d662e788eb761cbde0c00ff35a732bb9ce7fd025a6063f90efdbe0563
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: psiresp-base
@@ -21,10 +21,10 @@ outputs:
     
     requirements:
       host:
-        - python >=3.7,<3.10
+        - python {{ python_min }}
         - pip
       run:
-        - python >=3.7
+        - python >={{ python_min }}
         - qcelemental >=0.22.0
         - numpy
         - pydantic >=1.9
@@ -32,6 +32,8 @@ outputs:
         - tqdm
     
     test:
+      requires:
+        - python {{ python_min }}
       imports:
       - psiresp
       files:
@@ -45,10 +47,10 @@ outputs:
 
     requirements:
       host:
-        - python >=3.7,<3.10
+        - python {{ python_min }}
         - pip
       run:
-        - python >=3.7,<3.10
+        - python >={{ python_min }},<3.10
         - geometric
         - rdkit
         - qcfractal >=0.15.8
@@ -57,6 +59,8 @@ outputs:
         - {{ pin_subpackage('psiresp-base', exact=True) }}
     
     test:
+      requires:
+        - python {{ python_min }}
       imports:
         - psiresp
       files:
